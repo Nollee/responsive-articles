@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+<!--Language set to English. Change to da for Danish if needed-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--This ensures that the browser can read special signs and characters like the Danish letters æ, ø, å -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This helps avoid that a site displays differently with different screen resolutions -->
+
+    <title>News</title>
+    <!--This title will be the heading on google search and on the tab in the browser. Can contain up to 70 characters-->
+    <meta name="description" content="billede af wireframe og intro til titler">
+    <!-- this is for search engne optimization - fill in description of the page content. This will usually be the text shown under the heading in a search. Can contain up to 155 characters-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--This is a link to the stylesheet. Any rule written in the stylesheet will be used for this page -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="intro.html" class="logo"><img src="images/logo.png" alt="logo" width="60"> </a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="intro.html" class="nav-links" id="home">Hjem</a>
+            </li>
+            <li>
+                <a href="index.html" class="nav-links">Meghan Markle</a>
+            </li>
+            <li>
+                <a href="article.html" class="nav-links">Hugo Helmig</a>
+            </li>
+
+        </ul>
+        <script>
+            /* script til Burgertab*/
+            let mainNav = document.getElementById('js-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+
+            navBarToggle.addEventListener('click', function() {
+
+                mainNav.classList.toggle('active');
+            });
+
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            /* script som gøre nav sticky*/
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+
+        </script>
+
+    </nav>
+    <section>
+        <div class="row">
+            <!-- CARD 1 -->
+            <div class="card">
+                <a class="nav-links" href="article.html">
+                    <div class="card-main">
+                        <img class="card-pic" src="images/hugo_helmig.jpg" alt="Hugo Helmig">
+                        <div class="card-header">Sådan blev Hugo Helmig anholdt</div>
+                    </div>
+                </a>
+            </div>
+            <!-- CARD 2 -->
+            <div class="card">
+                <a class="nav-links" href="index.html">
+                    <div class="card-main">
+
+                        <img class="card-pic" src="images/meghan1.jpg" alt="Meghan Markle">
+                        <div class="card-header">Hertuginde Meghan mister højre hånd</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <h1>Wireframe</h1>
+
+        <img class="wireframe" src="images/53615570_390860164980029_7638542831346253824_n.jpg" alt="wireframe">
+
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="foot-info">
+                <p>Udgiver: <b>Gyldendal</b></p>
+            </div>
+            <div class="foot-info">
+                <p>Chefredaktør: <b>Mikkel Andersen</b></p>
+            </div>
+            <div class="foot-info">
+                <p>Adresse: <b>Aarhus Ringvej Syd 104, 8260 Viby </b></p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>

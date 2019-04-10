@@ -1,0 +1,318 @@
+/*CSS document*/
+
+/*Insert global rules here - rules that apply for all pages on your site and all device sizes. This could be text color, font type, font-sizes, margin on elements */
+
+/*COMMENTS WITH CAPITAL LETTERS ARE EASY TO SPOT, SO USE THEM FOR HEADINGS FOR OVERVIEW. IT IS A GOOD IDEA TO HAVE A HEADING FOR YOUR HEADER, NAVIGATION, MAIN AND FOOTER. SEE EXAMPLE BELOW*/
+
+
+/*HEADER*/
+
+/* example where you target the h1 inside the header tag and give it a color and a size */
+
+/*kode til intro.html*/
+
+
+
+/*kode til resten*/
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(css-images/baggrund1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+article {
+    margin-bottom: 80px;
+}
+
+header h3 {
+    font-size: 48px;
+}
+
+
+
+p {
+    font-family: Tahoma, Geneva, sans-serif;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: white;
+
+}
+
+/* css til navbar */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    font-size: 20px;
+    background-image: linear-gradient(260deg, #08a0a2 0%, #c9ad3c 100%);
+    border: 1px solid grey;
+    padding-bottom: 12px;
+
+}
+
+.main-nav {
+    list-style-type: none;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: rgba(230, 260, 240, 0.8);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 15px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(230, 260, 240, 0.8);
+    font-size: 24px;
+    margin-top: 17px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* indholdet i body*/
+.wireframe{
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 200%;
+    color: lightgrey;
+}
+
+.top-pic {
+    width: 100%;
+}
+
+h2 {
+    width: 100%;
+    margin-top: 30px;
+    color: lightgrey;
+}
+
+.bot-pics {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* forside menuer*/
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+  padding: 0 25px;
+    margin-top: 100px;
+}
+
+.card {
+  width: 100%;                 
+  display: flex;                
+  flex-direction: column;       
+  border-radius: 10px;           
+  overflow: hidden; 
+    align-items: center;                           
+    height: 100%;
+    margin: 20px;
+}
+
+.card-header {
+  color: white;
+  font-size: 1.8em;
+  font-weight: 600;
+  background-image: linear-gradient(260deg, #c9ad3c 0%, #08a0a2 100%);
+  padding: 5px 10px;
+    height: 4em;
+    
+}
+
+.card-pic{
+    width: 100%;
+    height: 100%;
+}
+
+.card-link{
+    
+}
+
+
+/* footer*/
+
+footer {
+    color: white;
+    background-color: #51514f;
+    padding-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 750px) {
+
+    h2 {
+        width: 60%;
+        margin-left: 2%;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    .pic-text {
+        width: 60%;
+        margin-left: 2%;
+    }
+
+    .top-pic {
+        width: 100%;
+    }
+
+    .bot-pics {
+        width: 60%;
+        margin-left: 2%;
+    }
+    
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+}
+
+.wireframe{
+    width: 60%;
+}
+
+
+@media screen and (min-width: 1080px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    #home {
+        display: none;
+    }
+
+    article {
+        margin: auto;
+        width: 70%;
+        margin-bottom: 80px;
+    }
+
+    h2 {
+        width: 60%;
+    }
+
+    .pic-text {
+        width: 60%;
+    }
+
+    .bot-pics {
+        width: 60%;
+    }
+    
+    .card{
+        width: 30%;
+        padding: auto;
+          border-radius: 0px;           
+
+    }
+    .card-pic{
+        width: 100%;
+    }
+    .card-header{
+        width: 100%;
+    }
+    
+    .wireframe{
+        width: 40%;
+    }
+}
+
+
+/*when you develop mobile first responsive pages, you add rules for different device sizes after all the global rules, starting with the smallest screen size*/

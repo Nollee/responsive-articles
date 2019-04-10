@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="da">
+<!--Language set to English. Change to da for Danish if needed-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--This ensures that the browser can read special signs and characters like the Danish letters æ, ø, å -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This helps avoid that a site displays differently with different screen resolutions -->
+
+    <title>Meghan Markle</title>
+    <!--This title will be the heading on google search and on the tab in the browser. Can contain up to 70 characters-->
+    <meta name="description" content="Hertuginde Meghan må sige farvel til endnu en ansat. Hendes højre hånd Amy Pickerill stopper således ved udgangen af denne måned">
+    <!-- this is for search engne optimization - fill in description of the page content. This will usually be the text shown under the heading in a search. Can contain up to 155 characters-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--This is a link to the stylesheet. Any rule written in the stylesheet will be used for this page -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="intro.html" class="logo"><img src="images/logo.png" alt="logo" width="60"> </a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="intro.html" class="nav-links" id="home">Hjem</a>
+            </li>
+            <li>
+                <a href="index.html" class="nav-links">Meghan Markle</a>
+            </li>
+            <li>
+                <a href="article.html" class="nav-links">Hugo Helmig</a>
+            </li>
+           
+        </ul>
+        <script>
+            let mainNav = document.getElementById('js-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+
+            navBarToggle.addEventListener('click', function() {
+
+                mainNav.classList.toggle('active');
+            });
+
+            window.onscroll = function() {
+                myFunction()
+            };
+
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+    </nav>
+
+    <article>
+        <h1>Hertuginde Meghan mister højre hånd </h1>
+
+        <img class="top-pic" src="images/meghan1.jpg" alt="Meghan-front">
+
+        <h2>Hertuginde Meghan må sige farvel til endnu en ansat. Hendes højre hånd Amy Pickerill stopper således ved udgangen af denne måned</h2>
+
+        <p class="pic-text">Hun har mistet ikke bare én, men hele tre assistenter på kort tid. <br> <br> Og den seneste i rækken til at sige farvel må siges at være et hårdt slag for hertuginde Meghan. <br> <br>
+            Ifølge Daily Mail har hertuginde Meghans højre hånd nemlig valgt at opsige sit job som personlig assistent.</p>
+        <p class="pic-text"> <i>Artiklen fortsætter under billedet...</i></p>
+
+
+        <img class="bot-pics" src="images/amy_og_meghan.jpg" alt="amy-og-meghan">
+
+        <p class="pic-text">Amy Pickerill har ellers været en af de drivende kræfter i at hjælpe 37-årige Meghan med rollen som hertuginde, efter Meghan blev gift med prins Harry i maj 2018. <br> <br> Amy Pickerill blev ansat sidste år og blev hurtigt betragtet som en af hertugindens vigtigste hjælpere. <br> <br> Ifølge Daily Mail vil Amy Pickerill forlade den royale familie helt og flytte over Atlanten. <br> <br>En ven tilføjer dog over for det britiske medie, at der ikke er ond stemning mellem Amy Pickerill og hertuginden:</p>
+
+        <p class="pic-text"> <i>Artiklen fortsætter under billedet...</i></p>
+
+        <img class="bot-pics" src="images/amy1.jpg" alt="amy">
+
+        <p class="pic-text">- Hun (Amy Pickerill, red.) har endda tilbudt stadig at hjælpe til, når den lille ny kommer og hjælpe dem med at organisere deres nye hushjælp, men derefter vil hun rykke helt videre, siger kilden til Daily Mail. <br> <br>Med farvellet til Amy Pickerill har hertuginden mistet hele tre assistenter inden for relativ kort tid.<br> <br>Sidste år i slutningen af november valgte 39-årige Melissa Toubati at forlade jobbet hos hertuginde Meghan – eftersigende fordi hertuginden var svær at arbejde sammen med, hvilket resulterede i, at Melissa Toubati brød sammen.</p>
+        
+                <p class="pic-text"> <i>Artiklen fortsætter under billedet...</i></p>
+        
+        <img class="bot-pics" src="images/prins-og-meghan.jpg" alt="prins-og-meghan">
+        
+        <p class="pic-text">Kort efter kom det også frem, at Samantha Cohen forlod det britiske kongehus efter hele 17 års tro tjeneste. <br> <br> Samantha Cohen havde i mange år været privatsekretær for dronning Elizabeth, men trådte tilbage fra den rolle i 2017 for at blive sekretær og assistent for Meghan og Harry.<br><br>Meghan og Harry bliver efter planen forældre til deres første baby om få måneder.</p>
+
+        
+    </article>
+
+    <footer>
+    <div class="footer">
+        <div class="foot-info">
+        <p>Udgiver: <b>Gyldendal</b></p>
+        </div>
+        <div class="foot-info">
+        <p>Chefredaktør: <b>Mikkel Andersen</b></p>
+        </div>
+        <div class="foot-info">
+        <p>Adresse: <b>Aarhus Ringvej Syd 104, 8260 Viby </b></p>
+        </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+    

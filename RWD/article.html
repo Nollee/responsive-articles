@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="da">
+<!--Language set to English. Change to da for Danish if needed-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--This ensures that the browser can read special signs and characters like the Danish letters æ, ø, å -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This helps avoid that a site displays differently with different screen resolutions -->
+
+    <title>Hugo Helmig</title>
+    <!--This title will be the heading on google search and on the tab in the browser. Can contain up to 70 characters-->
+    <meta name="description" content="Hugo Helmig står midt i sin første offentlige krise efter hans kokain-fadæse.">
+    <!-- this is for search engne optimization - fill in description of the page content. This will usually be the text shown under the heading in a search. Can contain up to 155 characters-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--This is a link to the stylesheet. Any rule written in the stylesheet will be used for this page -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="intro.html" class="logo"><img src="images/logo.png" alt="logo" width="60"> </a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="intro.html" class="nav-links" id="home">Hjem</a>
+            </li>
+            <li>
+                <a href="index.html" class="nav-links">Meghan Markle</a>
+            </li>
+            <li>
+                <a href="article.html" class="nav-links">Hugo Helmig</a>
+        </ul>
+        <script>
+            let mainNav = document.getElementById('js-menu');
+            let navBarToggle = document.getElementById('js-navbar-toggle');
+
+            navBarToggle.addEventListener('click', function() {
+
+                mainNav.classList.toggle('active');
+            });
+
+            window.onscroll = function() {
+                myFunction()
+            };
+
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+
+        </script>
+
+    </nav>
+
+    <article>
+        <h1>Mor ringede til politiet: Sådan blev Hugo Helmig anholdt</h1>
+        <img class="top-pic" src="images/hugo_helmig.jpg" alt="Hugo Helmig">
+        
+        <h2><i>Hugo Helmig står midt i sin første offentlige krise efter hans kokain-fadæse. Nu viser det sig, at det var sangstjernens egen mor, der ringede efter politiet</i></h2>
+
+        <p class="pic-text">For første gang i sin relativt korte karriere er Hugo Helmig kommet i modvind. I weekenden måtte det unge stjerneskud nemlig en tur i detentionen pga. en kæmpe kokainrus. <br> <br>Det kom frem i søndags, da Ekstra Bladet kunne berette om Hugos vilde weekend. Nu er det så kommet frem, at det er sangtalentets egen mor, Renée Toft Simonsen, som ringede efter politiet.</p>
+
+        <p class="pic-text"><i>Artiklen fortsætter under billedet...</i></p>
+
+        <img class="bot-pics" src="images/thomas-helmig.jpg" alt="Forældre">
+        
+        <p class="pic-text">- Anmelderen oplyste, at hendes søn løb rundt ude på gaden i psykotisk tilstand, står der i en anmærkning i døgnrapporten, som BT har fået aktindsigt i. <br> <br>Anholdelsen skete ved forældrenes adresse på Bülowsgade i Århus Midtby. Herefter blev 20-årige Hugo Helmig bragt til detentionen, hvor han kunne sove sin kokainrus ud.<br><br>Hugo Helmig har været ude og undskylde for sin opførsel. Men den store forklaring er ikke kommet endnu.
+
+        </p>
+        
+        <p class="pic-text"><i>Artiklen fortsætter under billedet...</i></p>
+        
+        <img class="bot-pics" src="images/hugo_helmig%20(1).jpg" alt="Hugo Helmig">
+        
+        <p>Allerede på fredag er Hugo Helmig dog tilbage, hvor han er bedst - på en scene. Her skal den unge stjerne in spe optræde til "X Factor".</p>
+        
+
+    </article>
+    
+    <footer>
+    <div class="footer">
+        <div class="foot-info">
+        <p>Udgiver: <b>Gyldendal</b></p>
+        </div>
+        <div class="foot-info">
+        <p>Chefredaktør: <b>Mikkel Andersen</b></p>
+        </div>
+        <div class="foot-info">
+        <p>Adresse: <b>Aarhus Ringvej Syd 104, 8260 Viby </b></p>
+        </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
